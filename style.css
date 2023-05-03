@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: "Barlow", light;
     margin: 0;
@@ -7,23 +11,129 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 5%;
+    background-color: #588157;
 }
 
 header img {
     width: 80px;
     height: 60px;
+    border-radius: 5px;
 }
 
-header ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-header li {
-    list-style-type: none;
-    padding-right: 15px;
-}
-
-header a {
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    user-select: none;
+  }
+  
+  .menu-icon span {
+    display: block;
+    background-color: #000;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .menu-icon span:nth-child(2) {
+    width: 20px;
+  }
+  
+  .menu-icon span:nth-child(3) {
+    width: 15px;
+  }
+  
+  /* Hide the checkbox by default */
+  .hidden-checkbox {
+    display: none;
+  }
+  
+  /* Show the menu when the checkbox is checked */
+  .hidden-checkbox:checked ~ .menu {
+    display: block;
+  }
+  
+  /* Style the menu */
+  .menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu li {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
-}
+    color: #000;
+  }
+
+  article {
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  article:first-child {
+    text-align: center;
+  }
+
+  article img {
+    height: 250px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+  }
+
+  section ul {
+    list-style: none;
+    text-align: left;
+  }
+  
+  ul li:before {
+    content: '✓';
+  }
+
+  #order {
+    height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  button {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #588157;
+    border-radius: 10px;
+    border-color: #588157;
+    border: 0;
+    margin-top: 40px;
+    align-self: center;
+  }

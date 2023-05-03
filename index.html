@@ -12,16 +12,50 @@
 
 <body>
     <header>
-        <img src="https://i.postimg.cc/WbrCpTDy/cake-logo.png" alt="Cake Factory logo"/>
+        <img id="logo" src="https://i.postimg.cc/WbrCpTDy/cake-logo.png" alt="Cake Factory logo"/>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Reviews</a></li>
+            <input type="checkbox" id="menu-toggle" class="hidden-checkbox"/>
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="#logo">Home</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
                 <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <article>
+            <section>
+                <h1>Satisfy your sweet tooth with our desserts</h1>
+                <p>You will find cupcakes, muffins, cakes, fondants and many more exquisite and delicious desserts here.</p>
+                <p>Break the rules and delight your loved ones with cakes not only on holidays, but already today.</p>
+                <img src="https://images.unsplash.com/photo-1619356070234-607a25a7171e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mjg2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Cakes image"/>
+            </section>
+            <section>
+                <h2>Why choose us?</h2>
+                <ul>
+                    <li>Certified and carefully selected ingredients</li>
+                    <li>Recipes tested over the years</li>
+                    <li>Compliance with sanitary standards</li>
+                    <li>We guarantee a smile on your face</li>
+                </ul>
+                <img src="https://images.unsplash.com/photo-1622896784083-cc051313dbab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cakes image">
+            </section>
+            <section id="Reviews">
+                <h2>Reviews</h2>
+                <p>No one will evaluate us better than our customers and thousands of their reviews.</p>
+            </section>
+            <section id="order">
+                <h2>Order a cake and join our union of dessert geeks</h2>
+                <button>Order dessert</button>
+            </section>
+        </article>
+    </main>
 </body>
 
 </html>
