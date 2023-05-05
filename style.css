@@ -91,22 +91,31 @@ header a:hover {
 }
 
 main {
+    padding: 20px;
     text-align: center;
     background-image: linear-gradient(white, #e7f3d3);
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 26px;
 }
 
-article {
-  padding: 20px;
+article:nth-child(1) div {
+    background-color: #e3f3c8;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 
 article img {
-    height: 300px;
     width: 100%;
     border-radius: 20px;
+}
+
+article:nth-child(1) button {
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 #why-choose {
@@ -137,7 +146,6 @@ hr {
 #reviews {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 
 .reviews {
@@ -171,6 +179,7 @@ hr {
 }
 
 #reviews a {
+  font-size: 18px;
   color: black;
   align-self: flex-end;
   margin-right: 15px;
@@ -185,17 +194,17 @@ hr {
 }
 
 #order {
+  max-width: 830px;
   height: 300px;
-  background-image: url(https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://w0.peakpx.com/wallpaper/761/8/HD-wallpaper-cake-with-chocolate-cream-fruit-cheesecake-berries-sweets-cakes.jpg);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 20px;
+  padding: 30px;
+  border-radius: 30px;
 }
 
 button {
@@ -207,6 +216,7 @@ button {
   border: 0;
   margin-top: 40px;
   align-self: center;
+  cursor: pointer;
 }
 
 button:hover {
@@ -219,10 +229,6 @@ button:hover {
   border-radius: 10px;
   color: white;
   padding: 10px;
-}
-
-#gallery h2 {
-  margin-top: 30px;
 }
 
 .gallery > div {
@@ -243,7 +249,7 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: 100px;
   grid-auto-flow: dense;
-  padding: 0 20px 20px 20px;
+  padding-bottom: 20px;
 }
 
 .vertical {
@@ -254,7 +260,7 @@ button:hover {
   grid-column: span 2;
 }
 
-#footer {
+footer {
   background-color: #71a571;
   padding: 15px;
   display: grid;
@@ -262,12 +268,13 @@ button:hover {
   grid-template-rows: 50px 1fr;
 }
 
-#footer #logo {
+footer #logo {
   grid-column: 11 / -1;
   grid-row: 2 / 3;
+  justify-self: end;
 }
 
-#footer img:not(#logo) {
+footer img:not(#logo) {
   width: 20px;
   height: 20px;
   margin: 0 10px;
@@ -281,9 +288,10 @@ button:hover {
 }
 
 #social {
-  grid-column: 10 / 12;
+  grid-column: 10 / 13;
   grid-row: 1 / 3;
   display: flex;
+  justify-self: end;
 }
 
 #links a {
@@ -298,12 +306,17 @@ button:hover {
 }
 
 @media (min-width: 540px) {
+  body {
+    font-size: larger;
+  }
+  
   .menu-icon {
     display: none;
   }
 
   .menu {
     display: flex;
+    flex: 1;
     justify-content: flex-end;
     list-style: none;
     margin: 0;
@@ -322,5 +335,61 @@ button:hover {
 
   .menu li:first-child {
     margin-left: 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  article:nth-child(1) button {
+    width: 30%;
+  }
+
+  #order {
+    margin: 20px 6%;
+  }
+
+  .gallery {
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  #links a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu li {
+    margin-left: 40px;
+  }
+
+  article:nth-child(1) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  article:nth-child(1) img {
+    width: 65%;
+  }
+
+  article:nth-child(1) div {
+    align-self: center;
+  }
+
+  article:nth-child(1) button {
+    width: 200px;
+  }
+
+  #why-choose {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #reviews {
+    display: flex;
+    flex-direction: row;
   }
 }
