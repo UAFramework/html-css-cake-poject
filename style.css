@@ -296,3 +296,31 @@ button:hover {
 #links a:hover {
   color: white;
 }
+
+@media (min-width: 540px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #588157;
+    box-shadow: none;
+  }
+
+  .menu li {
+    margin-left: 10px;
+    border: 0;
+  }
+
+  .menu li:first-child {
+    margin-left: 0;
+  }
+}
