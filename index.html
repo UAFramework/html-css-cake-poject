@@ -6,11 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header>
+        <img id="logo" src="https://i.postimg.cc/WbrCpTDy/cake-logo.png" alt="Cake Factory logo"/>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="hidden-checkbox"/>
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="#logo">Home</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div>
+                <h1>Satisfy your sweet tooth with our desserts</h1>
+                <p>Break the rules and delight your loved ones with cakes not only on holidays, but already today.</p>
+                <button>Shop now</button>
+            </div>
+            <img src="https://cdn.wallpapersafari.com/21/58/iL7ayk.jpg" alt="Cakes image"/>
+        </article>
+        <article>
+            <h2>Why choose Cake Factory?</h2>
+            <div id="why-choose">
+                <div>
+                    <img class="svg-image" src="https://svgshare.com/i/smK.svg" alt="ingredients image">
+                    <h3>Certified and carefully selected ingredients</h3>
+                    <p>We conscientiously and responsibly check all our suppliers and the quality of their products.</p>
+                </div>
+                <div>
+                    <img class="svg-image" src="https://svgshare.com/i/smz.svg" alt="Recipe image">
+                    <h3>Our recipes have been tested for years</h3>
+                    <p>Our recipes have been perfected over the years, and now you can taste all of our desserts, which are the crowns of creation in their kind.</p>
+                </div>
+                <div>
+                    <img class="svg-image" src="https://svgshare.com/i/snJ.svg" alt="Cleanliness image">
+                    <h3>Compliance with sanitary standards</h3>
+                    <p>Our employees adhere to the standards of cleanliness prescribed by company policy and the law. You can check it yourself.</p>
+                </div>
+                <div>
+                    <img class="svg-image" src="https://svgshare.com/i/smc.svg" alt="Smile image">
+                    <h3>We guarantee a smile on your face</h3>
+                    <p>Thousands of customers trust us and receive in return unsurpassed service, quality product and the warmest emotions.</p>
+                </div>
+            </div>
+        </article>
+        <hr>
+        <article id="reviews">
+            <div>
+                <h2>Reviews</h2>
+                <p>No one will evaluate us better than our customers and thousands of their reviews.</p>
+                <section class="reviews">
+                    <img class ="reviews-image" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mike Perry">
+                    <h3>Mike Perry</h3>
+                    <p>I have been familiar with the Cake Factory for a long time. Always happy with everything, but recently I was organizing an event and they took care of the catering for me. Everything was at the highest level, thank you, I will come again and again.</p>
+                </section>
+                <section class="reviews">
+                    <img class ="reviews-image" src="https://images.pexels.com/photos/6001808/pexels-photo-6001808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Linda Hudson">
+                    <h3>Linda Hudson</h3>
+                    <p>I recently visited the Cake Factory for the first time. And it was very cool, I was in a rather bad mood that day, but after eating a piece of cake and meeting the friendly staff, I left with a smile. Perfect first impression, you have a new loyal customer.</p>
+                </section>
+                <a href="#">Read more</a>
+            </div>
+            <section id="order">
+                <h2>Order a cake and join our union of dessert geeks</h2>
+                <button>Order dessert</button>
+            </section>
+        </article>
+        <section>
+            <h2>Gallery of sweets</h2>
+            <div id="gallery">
+                <div><img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div class="vertical"><img src="https://images.unsplash.com/photo-1609357871098-7949aa2fb20d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTgzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div class="horizontal"><img src="https://images.unsplash.com/photo-1626803775151-61d756612f97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8ODh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div><img src="https://images.unsplash.com/photo-1518047601542-79f18c655718?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjI2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div><img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div class="horizontal"><img src="https://images.unsplash.com/photo-1568827999250-3f6afff96e66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div class="vertical"><img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div><img src="https://images.unsplash.com/photo-1525151498231-bc059cfafa2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div class="horizontal"><img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div><img src="https://images.unsplash.com/photo-1607206608117-31f7a8a0ee46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Cake image"></div>
+                <div><img src="https://besthqwallpapers.com/Uploads/7-4-2018/47644/chocolate-cake-sweets-pastries-chocolate-cheesecake-cakes.jpg" alt="Cake image"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="links">
+            <a href="#">Delivery</a>
+            <a href="#">Grocery</a>
+            <a href="#">About Cake Factory</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div id="social">
+            <a class="footer-link" href="#" target="_blank"><img class="footer-image" src="https://svgshare.com/i/sgw.svg" alt="Twitter"/></a>
+            <a class="footer-link" href="#" target="_blank"><img class="footer-image" src="https://svgshare.com/i/sgQ.svg" alt="Facebook"/></a>
+            <a class="footer-link" href="#" target="_blank"><img class="footer-image" src="https://svgshare.com/i/shn.svg" alt="Instagram"/></a>
+        </div>
+        <img id="logo" src="https://i.postimg.cc/WbrCpTDy/cake-logo.png" alt="Cake Factory logo"/>
+    </footer>
 </body>
-
 </html>

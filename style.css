@@ -1,1 +1,427 @@
-/*  Add your styling here */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: #588157;
+}
+
+header a:hover {
+    background-color: #71a571;
+}
+
+#logo {
+    width: 80px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    user-select: none;
+}
+  
+.menu-icon span {
+    display: block;
+    background-color: #000;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+.menu-icon span:nth-child(2) {
+    width: 20px;
+}
+
+.menu-icon span:nth-child(3) {
+    width: 15px;
+}
+
+/* Hide the checkbox by default */
+.hidden-checkbox {
+    display: none;
+}
+
+/* Show the menu when the checkbox is checked */
+.hidden-checkbox:checked ~ .menu {
+    display: block;
+}
+
+/* Style the menu */
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    padding: 20px;
+    background-image: linear-gradient(white, #e7f3d3);
+}
+
+h1 {
+    font-size: 26px;
+}
+
+article:nth-child(1) {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+article:nth-child(1) div {
+    background-color: #e3f3c8;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+article:nth-child(1) button {
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+article:nth-child(2) h2 {
+  text-align: center;
+}
+
+#why-choose {
+  text-align: center;
+    padding: 0 15%;
+}
+
+#why-choose div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#why-choose div p {
+  margin-top: 0;
+}
+
+.svg-image {
+    height: 100px;
+    width: 100px;
+}
+
+hr {
+  width: 100%;
+}
+
+#reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+#reviews h2, #reviews p {
+  text-align: center;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 40px 1fr;
+  grid-gap: 5px;
+  text-align: left;
+  border: 1px solid lightgray;
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+
+.reviews img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin: 20px 10px;
+}
+
+.reviews h3 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.reviews p {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#reviews div a {
+  font-size: 18px;
+  color: black;
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+#reviews a:hover {
+  color: #588157
+}
+
+#reviews h2 {
+  margin-bottom: 0;
+}
+
+#order {
+  text-align: center;
+  max-width: 830px;
+  height: 300px;
+  background-image: url(https://w0.peakpx.com/wallpaper/761/8/HD-wallpaper-cake-with-chocolate-cream-fruit-cheesecake-berries-sweets-cakes.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #71a571;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 40px;
+  align-self: center;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #588157;
+  background-color: white;
+}
+
+#order h2 {
+  background-color: #588157a8;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+main > section h2 {
+  text-align: center;
+}
+
+#gallery > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
+  padding-bottom: 20px;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+footer {
+  background-color: #71a571;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 1fr;
+}
+
+footer #logo {
+  grid-column: 11 / -1;
+  grid-row: 2 / 3;
+  justify-self: end;
+}
+
+footer img:not(#logo) {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+#links {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#social {
+  grid-column: 10 / 13;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-self: end;
+}
+
+#links a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 14px;
+}
+
+#links a:hover {
+  color: white;
+}
+
+@media (min-width: 540px) {
+  body {
+    font-size: larger;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #588157;
+    box-shadow: none;
+  }
+
+  .menu li {
+    margin-left: 10px;
+    border: 0;
+  }
+
+  .menu li:first-child {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  article:nth-child(1) button {
+    width: 30%;
+  }
+
+  #order {
+    margin: 20px 6%;
+  }
+
+  #gallery {
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  #links a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu li {
+    margin-left: 40px;
+  }
+
+  article:nth-child(1) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  article:nth-child(1) img {
+    width: 65%;
+  }
+
+  article:nth-child(1) div {
+    align-self: center;
+    margin-left: 30px;
+  }
+
+  article:nth-child(1) button {
+    width: 200px;
+  }
+
+  #why-choose {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #reviews {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #order {
+    align-self: center;
+    margin-top: 70px;
+  }
+
+  #reviews div a {
+    text-align: left;
+  }
+
+  #gallery {
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
