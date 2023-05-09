@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Pacifico Regular";
+    src: url("./Pacifico/Pacifico-Regular.ttf");
+}
+
+h1 {
+    font-family: "Pacifico Regular";
+}
+
+/* header start */
+.navbar {
+    padding: 0;
+    background-color: #ffd6ff;
+}
+
+nav .container .main-menu {
+    background-color: #ffd6ff;
+}
+
+.header-info-block {
+    background-color: #ffd6ff;
+}
+
+.header-info-block .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-info-block .logo {
+    width: 100px;
+}
+
+.header-info-block .tagline {
+    align-self: flex-end;
+    padding: 10px;
+    text-align: right;
+    font-family: "Pacifico Regular";
+    font-size: 1.8em;
+    color: #cdb4db;
+}
+
+.header-info-block .tagline span {
+    display: block;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.main-menu .nav-link {
+    background-color: #bde0fe;
+    margin: 0 10px;
+    padding: 10px 20px !important;
+}
+
+.main-menu .nav-link:hover {
+    background-color: #fff;
+}
+
+/* header end */
+
+/* footer start */
+footer {
+    background-color: #e7c6ff;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+}
+
+/* footer end */
+
+@media (min-width: 540px) {
+
+    /* customize bootstrap naw width start */
+    .navbar-expand-sm .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+
+    /* customize bootstrap naw width finish */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .navbar {
+        padding-top: 30px;
+        background-color: #fff;
+    }
+
+    header .header-image {
+        justify-content: flex-end;
+        height: 200px;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 900px) {
+    .header-info-block .tagline span {
+        display: inline;
+    }
+
+    .footer-menu {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        text-align: right;
+    }
+
+    .lead {
+        margin-top: 50px;
+    }
+}
