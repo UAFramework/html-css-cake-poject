@@ -1,16 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <div id="root">
+      <header>
+        <section id="header-section">
+          <img id="logo" src="./imgs Cake/logo.jpg" />
+          <p>The best cakes in town delivered to your door</p>
+          <nav id="nav-items">
+            <a href="#">Home</a>
+            <a href="#">Cakes</a>
+            <a href="#">orderin</a>
+            <a href="#">lessons</a>
+            <a href="#">about</a>
+          </nav>
+        </section>
+      </header>
+      <main>
+        <!--Hero section-->
+        <section id="hero-container">
+          <img id="big-cake" src="./imgs Cake/bigcake.jpg" />
+
+          <div class="welcome-section">
+            <h1>Welcome</h1>
+            <p>
+              So how would you describe a good cake? A good cake, as our experts
+              put it, must look beautiful and taste divine. It must have a
+              perfect balance of appearance, texture, and flavour. It must have
+              nothing but the best and freshest ingredients, meticulously mixed
+              in the right proportions and baked to flawless perfection.
+            </p>
+          </div>
+        </section>
+
+        <section id="kind-cakes">
+          <div id="cake-tile">
+            <article>
+              <a href=""
+                ><img src="./imgs Cake/cheescake.jpg" />
+                <p>Airy delicacy of cheesecake</p></a
+              >
+              <a href=""
+                ><img src="./imgs Cake/macaroons2.jpg" />
+                <p>Festive mood from macaroons</p></a
+              >
+              <a href=""
+                ><img src="./imgs Cake/sinabones.jpg" />
+                <p>The passion of aromatic cinnabons</p></a
+              >
+              <a href=""
+                ><img src="./imgs Cake/peeches.jpg" />
+                <p>Profiteroles to special moments</p></a
+              >
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!--footer-->
+      <footer id="footer-container">
+        <div>How to order Cakes</div>
+        <div id="social-media-link">
+          <a href=""
+            ><div><img src="./img/twitter-icon.svg" /></div
+          ></a>
+          <a href=""
+            ><div><img src="./img/facebook-icon.svg" /></div
+          ></a>
+          <a href=""
+            ><div><img src="./img/instagram-icon.svg" /></div
+          ></a>
+        </div>
+        <div class=phone>Contact with us<a href="tel:+380671234567">+38 (067) 123-45-67</a></div></div>
+        <div>CakeProject, Inc. &copy;</div>
+      </footer>
+    </div>
     <!-- Add your markup here -->
-</body>
-
+  </body>
 </html>

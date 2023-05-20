@@ -1,1 +1,64 @@
+body {
+  font-family: "Pacifico", sans-serif;
+  background-color: #f3ecf2;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#header-section {
+  display: flex;
+  width: 100%;
+  height: l8vh;
+  flex-direction: column;
+  align-content: center;
+  background-color: #aaf37a;
+}
+
+#logo {
+  width: 5em;
+}
+
+#nav-items {
+  text-transform: uppercase;
+}
+
+#hero-container,
+#kind-cakes {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #9bbef8;
+  width: 90%;
+  gap: 30px;
+   margin: 0.5em 0;
+  font-size: 1.5em;
+}
+
+#big-cake {
+  max-width: 15em;
+}
+
+
+#kind-cakes {
+  display: flex;
+  flex-direction: row;
+    }
+#cake-tile a {
+  width: 15em;
+}
+
+#footer-container {
+  height: 25vh;
+  background-color: #eba3da;
+}
+
+a[href^="tel:"] {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
 /*  Add your styling here */
