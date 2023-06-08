@@ -1,16 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <div>
+      <header>
+        <div class="header-section">
+          <div id="logo"><img id="logo" src="./imgs Cake/logo.jpg" /></div>
 
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu-btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu-box">
+              <li><a class="menu__item" href="#">Home</a></li>
+              <li><a class="menu__item" href="#">Cakes</a></li>
+              <li><a class="menu__item" href="#">Orderin</a></li>
+              <li><a class="menu__item" href="#">Lessons</a></li>
+              <li><a class="menu__item" href="#">About</a></li>
+            </ul>
+          </div>
+          <div id="slogan">
+            <p>The best cakes in town delivered to your door</p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!--Hero section-->
+        <div class="welcome-section">
+          <div>
+            <h1>Welcome</h1>
+            <p>
+              So how would you describe a good cake? A good cake, as our experts
+              put it, must look beautiful and taste divine. It must have a
+              perfect balance of appearance, texture, and flavour. It must have
+              nothing but the best and freshest ingredients, meticulously mixed
+              in the right proportions and baked to flawless perfection.
+            </p>
+          </div>
+          <div id="big-cake"><img src="./imgs Cake/bigcake.jpg" /></div>
+        </div>
+
+        <div class="kinds-cakes">
+          <div class="item-cake">
+            <p>Cheescakes</p>
+            <a href=""
+              ><img class="img-cake" src="./imgs Cake/cheescake.jpg"
+            /></a>
+          </div>
+          <div class="item-cake">
+            <p>Macaroons</p>
+            <a href=""
+              ><img class="img-cake" src="./imgs Cake/macaroons2.jpg"
+            /></a>
+          </div>
+          <div class="item-cake">
+            <p>Sinabones</p>
+            <a href=""><img class="img-cake" src="./imgs Cake/pluhi.jpg" /></a>
+          </div>
+          <div class="item-cake">
+            <p>Peeches</p>
+            <a href=""
+              ><img class="img-cake" src="./imgs Cake/peeches.jpg"
+            /></a>
+          </div>
+        </div>
+      </main>
+
+      <!--footer-->
+      <footer id="footer-container">
+        <div>How to order Cakes</div>
+        <div id="social-media-link">
+          <a href=""><img src="./img/twitter-icon.svg" /> </a>
+          <a href=""><img src="./img/facebook-icon.svg" /> </a>
+          <a href=""><img src="./img/instagram-icon.svg" /> </a>
+        </div>
+        <div class="phone">
+          Contact with us<a href="tel:+380671234567">+38 (067) 123-45-67</a>
+        </div>
+        <div><p>CakeProject, Inc. &copy;</p></div>
+      </footer>
+    </div>
+  </body>
 </html>
