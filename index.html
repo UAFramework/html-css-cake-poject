@@ -17,26 +17,33 @@
   </head>
 
   <body>
-    <div id="root">
+    <div>
       <header>
-        <section id="header-section">
-          <img id="logo" src="./imgs Cake/logo.jpg" />
-          <p>The best cakes in town delivered to your door</p>
-          <nav id="nav-items">
-            <a href="#">Home</a>
-            <a href="#">Cakes</a>
-            <a href="#">orderin</a>
-            <a href="#">lessons</a>
-            <a href="#">about</a>
-          </nav>
-        </section>
+        <div class="header-section">
+          <div id="logo"><img id="logo" src="./imgs Cake/logo.jpg" /></div>
+
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu-btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu-box">
+              <li><a class="menu__item" href="#">Home</a></li>
+              <li><a class="menu__item" href="#">Cakes</a></li>
+              <li><a class="menu__item" href="#">Orderin</a></li>
+              <li><a class="menu__item" href="#">Lessons</a></li>
+              <li><a class="menu__item" href="#">About</a></li>
+            </ul>
+          </div>
+          <div id="slogan">
+            <p>The best cakes in town delivered to your door</p>
+          </div>
+        </div>
       </header>
       <main>
         <!--Hero section-->
-        <section id="hero-container">
-          <img id="big-cake" src="./imgs Cake/bigcake.jpg" />
-
-          <div class="welcome-section">
+        <div class="welcome-section">
+          <div>
             <h1>Welcome</h1>
             <p>
               So how would you describe a good cake? A good cake, as our experts
@@ -46,50 +53,48 @@
               in the right proportions and baked to flawless perfection.
             </p>
           </div>
-        </section>
+          <div id="big-cake"><img src="./imgs Cake/bigcake.jpg" /></div>
+        </div>
 
-        <section id="kind-cakes">
-          <div id="cake-tile">
-            <article>
-              <a href=""
-                ><img src="./imgs Cake/cheescake.jpg" />
-                <p>Airy delicacy of cheesecake</p></a
-              >
-              <a href=""
-                ><img src="./imgs Cake/macaroons2.jpg" />
-                <p>Festive mood from macaroons</p></a
-              >
-              <a href=""
-                ><img src="./imgs Cake/sinabones.jpg" />
-                <p>The passion of aromatic cinnabons</p></a
-              >
-              <a href=""
-                ><img src="./imgs Cake/peeches.jpg" />
-                <p>Profiteroles to special moments</p></a
-              >
-            </article>
+        <div class="kinds-cakes">
+          <div class="item-cake">
+            <p>Cheescakes</p>
+            <a href=""
+              ><img class="img-cake" src="./imgs Cake/cheescake.jpg"
+            /></a>
           </div>
-        </section>
+          <div class="item-cake">
+            <p>Macaroons</p>
+            <a href=""
+              ><img class="img-cake" src="./imgs Cake/macaroons2.jpg"
+            /></a>
+          </div>
+          <div class="item-cake">
+            <p>Sinabones</p>
+            <a href=""><img class="img-cake" src="./imgs Cake/pluhi.jpg" /></a>
+          </div>
+          <div class="item-cake">
+            <p>Peeches</p>
+            <a href=""
+              ><img class="img-cake" src="./imgs Cake/peeches.jpg"
+            /></a>
+          </div>
+        </div>
       </main>
 
       <!--footer-->
       <footer id="footer-container">
         <div>How to order Cakes</div>
         <div id="social-media-link">
-          <a href=""
-            ><div><img src="./img/twitter-icon.svg" /></div
-          ></a>
-          <a href=""
-            ><div><img src="./img/facebook-icon.svg" /></div
-          ></a>
-          <a href=""
-            ><div><img src="./img/instagram-icon.svg" /></div
-          ></a>
+          <a href=""><img src="./img/twitter-icon.svg" /> </a>
+          <a href=""><img src="./img/facebook-icon.svg" /> </a>
+          <a href=""><img src="./img/instagram-icon.svg" /> </a>
         </div>
-        <div class=phone>Contact with us<a href="tel:+380671234567">+38 (067) 123-45-67</a></div></div>
-        <div>CakeProject, Inc. &copy;</div>
+        <div class="phone">
+          Contact with us<a href="tel:+380671234567">+38 (067) 123-45-67</a>
+        </div>
+        <div><p>CakeProject, Inc. &copy;</p></div>
       </footer>
     </div>
-    <!-- Add your markup here -->
   </body>
 </html>
